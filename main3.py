@@ -9,7 +9,7 @@ with open("asdf2.txt") as f:
 #         text2 += i
 # print(text2)
 
-pattern = re.compile(r"[a-z]([A-Z]{3}[a-z][A-Z]{3})[a-z]")
+pattern = re.compile(r"[a-z]([A-Z]{3}[a-z][A-Z]{3})")
 matches = pattern.finditer(text)
 for match in matches:
     print(match.group(1))
